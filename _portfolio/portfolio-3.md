@@ -1,11 +1,14 @@
 ---
-title: "Computer Vision for fish size estimation"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "NeRF LiDAR 3D Reconstruction"
+excerpt: "To achieve high quality 3D reconstruction with implicit neural representation using LiDAR prior<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
 
-Code available here[https://github.com/HonAnson/fish_cv_algorithm]
+# --- Code available [here](https://github.com/HonAnson/LiDAR_NeRF) --- 
 
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+🚧 Under Construction! 🚧
+
+
+

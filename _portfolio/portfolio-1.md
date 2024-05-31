@@ -1,10 +1,10 @@
 ---
-title: "Computer Vision for fish size estimation"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Computer Vision for Fish Size Estimation 🐟"
+excerpt: "A stoichastic approach to fish size estimation without depth prior <br/><img src='/images/portfolio_cover/fish_cv.gif' width='500' height='500'>"
 collection: portfolio
 ---
 
-### Code available [here](https://github.com/HonAnson/fish_cv_algorithm)
+### --- Code available [here](https://github.com/HonAnson/fish_cv_algorithm) ---
 
 
 ### Introduction
