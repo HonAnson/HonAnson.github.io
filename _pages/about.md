@@ -6,31 +6,27 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I'm Anson! Welcome and thanks for checking out my personal page. I believe that hardwork and enjoy what you do is the magic to be successful in anything 😃.
+Hi, I'm Anson! Welcome and thanks for visiting my personal page. I believe that hardwork and enjoy what you do is the key to be successful in anything 😃.
 
 Here are a few facts about me:
 - I'm currently MSc Applied Machine Learning student at Imperial College London
-- I'm currently working on my thesis: NeRF LiDAR 3D Reconstruction
+- I'm working on my thesis: NeRF LiDAR 3D Reconstruction
 - I'm interested in mahcine learning and computer vision
-- Feel free to contact me!
+- I love playing Karate
 
-# My Skills
-
-Programming:
-- python --- Intermediate, experence in: pytorch, keras, opencv, open3d
-- c++ --- Basic / Intermediate
-- Julia --- Basic
-- Matlab --- Basic
-
-Modelling:
-- Solidworks
-- AutoCAD
-- Revit
+Feel free to checkout my portfolio and my CV. The best way to contact me will be through email: [hon.anson@gmail.com](hon.anson@gmail.com)
 
 
-### A Monthly Picture
 
 
+
+
+
+# Random Picture
+
+<img src="images/random/flowershop.jpeg" alt="flowershop" width="400"/>
+
+A flower shop next to a church in London.
 
 
 

@@ -24,8 +24,8 @@ author:
   avatar           : "profile.png"
   name             : "Anson Hon"
   pronouns         : # example: "she/her"  
-  bio              : "I love computer vision"
-  location         : "Earth"
+  bio              : "Computer Visioin / Machine Learning Enthusiast"
+  location         : "Hong Kong / London"
   employer         : "Imperial College London"
   uri              : # URL
   email            : "hon.anson@gmail.com" 
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : anson-hon-6b28a3187
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
