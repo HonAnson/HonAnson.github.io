@@ -12,8 +12,8 @@ redirect_from:
 Education
 ======
 * MSc in Applied Machine Learning, Imperial College London, 2024 (expected)
-* BEng in Mechanical Engineering (International), University of Leeds, 2021
-* Exchange Student, Nagoya University, 2019
+* BEng in Mechanical Engineering (International), University of Leeds, 2021, [transcript](https://HonAnson.github.io/files/U_of_Leeds_Transcript.pdf)
+* Exchange Student, Nagoya University, 2019, [transcript](https://HonAnson.github.io/files/NUPACE_transcript.pdf)
 
 Work experience
 ======
