@@ -13,12 +13,14 @@ In this repository, I demonstrated water quality control algorithm I designed wh
 Enjoy!
 
 
-<insert image to demonstrate my idea>
+
 
 
 ### Quick start
+
 ```
 conda env create -f environment.yml
+conda activate water
 ```
 Go to `multivariant_gauss_water_quality.ipynb` and everything shall run.  
 The notebook is heavily commented for demonstration purpose.
@@ -39,7 +41,9 @@ A small chunk of water data (across two weeks) is in `water_data.csv`. They are:
 
 Lets visualize them:
 
-![water temperature raw](portfolio-2/temp_raw.png )
+<img src="extreme_fish.png" alt="extreme" width="350"/>
+
+![water temperature raw](portfolio-2/temp_raw.png)
 ![water pH raw](portfolio-2/ph_raw.png )
 ![water DO raw](portfolio-2/DO_raw.png )
 ![water EC raw](portfolio-2/EC_raw.png )

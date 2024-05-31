@@ -107,17 +107,18 @@ To summarise:
 #### Performance
 We compare estimated size with actual size, with different scaling input. In general, length is better estimated compare to size. It is also observed that both length and area are underestimated. 
 
+<div style="display: flex;">
+    <img src="length_plot.png" alt="length vs scale" width="400"/>
+    <img src="size_plot.png" alt="size vs scale" width="400"/>
+</div>
 
-<img src="length_plot.png" alt="depth" width="400"/>
 
-<img src="size_plot.png" alt="depth" width="400"/>
+Considering estimation vs number of images, one could see that the estimation converges quickly:
 
-
-Considering estimation vs number of images, one could see that the estimation converges quickly.
-
+<div style="display: flex;">
 <img src="length_vs_trial.png" alt="length vs trial" width="400"/>
 <img src="size_vs_trial.png" alt="depth vs trial" width="400"/>
-
+</div>
 
 
 Heres why there is a bias (under estimation) in our estimation - because I only include fishes that are entirely within the frame. Fishes that are closer to the camera are less likely to be included, while further to the camera, fishes are little less like to be included only. This leading to an underestimation of fish sizes, in particular, this issue in our simulation raises as fish actual size increases.
