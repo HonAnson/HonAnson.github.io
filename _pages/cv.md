@@ -42,13 +42,13 @@ Programming:
 
 Modelling:
 * Solidworks
-* AutoCAD
+* 
 * Revit
 
 Language:
 * Cantonese --- Native
 * Englihsh --- Native
-* Manderine ---  Native
+* Mandarin ---  Native
 * Japanese ---  Intermediate, JLPT N3 qualified
 
 

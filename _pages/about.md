@@ -6,13 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, I'm Anson! Welcome and thanks for visiting my personal page. I believe that hardwork and enjoy what you do is the key to be successful in anything 😃.
+Hi, my name is Anson Hon. Welcome and thank you for visiting my personal page. 
 
 Here are a few facts about me:
-- I'm currently MSc Applied Machine Learning student at Imperial College London
-- I'm working on my thesis: NeRF LiDAR 3D Reconstruction
-- I'm interested in mahcine learning and computer vision
-- I love playing Karate
+- I am currently MSc Applied Machine Learning student at Imperial College London
+- I am working on my thesis: NeRF LiDAR 3D Reconstruction
+- I am interested in mahcine learning and computer vision
 
 Feel free to checkout my portfolio and my CV. The best way to contact me will be through email: [hon.anson@gmail.com](hon.anson@gmail.com)
 
@@ -22,11 +21,11 @@ Feel free to checkout my portfolio and my CV. The best way to contact me will be
 
 
 
-# Random Picture
+# Random
 
 <img src="images/random/flowershop.jpeg" alt="flowershop" width="400"/>
 
-A flower shop next to a church in London.
+A beautiful flower shop next to a church in London.
 
 
 
