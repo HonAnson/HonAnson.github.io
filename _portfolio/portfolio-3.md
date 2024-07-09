@@ -43,14 +43,14 @@ Lets visualize them:
 
 <img src="extreme_fish.png" alt="extreme" width="350"/>
 
-![water temperature raw](portfolio-2/temp_raw.png)
-![water pH raw](portfolio-2/ph_raw.png )
-![water DO raw](portfolio-2/DO_raw.png )
-![water EC raw](portfolio-2/EC_raw.png )
+![water temperature raw](portfolio-3/temp_raw.png)
+![water pH raw](portfolio-3/ph_raw.png )
+![water DO raw](portfolio-3/DO_raw.png )
+![water EC raw](portfolio-3/EC_raw.png )
 
 Obviously, there are some abnormal at the very end of the data, (the EC and temperature dipped rapidly), so I chose to get rid of it and use 0 to 4000 time step of data. I then z-normalized the data. Plotting the cleaned data:
 
-![water normalized raw](portfolio-2/normalized.png)
+![water normalized raw](portfolio-3/normalized.png)
 
 
 ### The model
@@ -67,7 +67,7 @@ Heres visualization of the model in temperature and pH dimension, with EC and DO
 
 
 
-![Visualization of model](portfolio-2/heatmap_dot.png)
+![Visualization of model](portfolio-3/heatmap_dot.png)
 
 Temperature and pH are slightly correlated, which is due to manual control of the crayfish farmer. The blue dot is [temp = 25, pH = 8.5, DO = 11, EC = 1550], which is optimal for cultivation (you can also see in the raw data plot, this is within reasonable range). The red dot is [temp = 20, pH = 8.5, DO = 11, EC = 1550], whcih is too cold for crayfish cultivation.
 
@@ -83,7 +83,7 @@ I first colelct a set of cultivation activity that the fish farmer would do, e.g
 
 For each action, model them as a unit vector, pointing towards the direction of its change to water status. For example, the action "covering the pond" would be represented by the vector [-1 0 0 0], meaning that covering the pond would decrease the temperature. Plotting them onto the heatmap:
 
-![heatmap suggestions](portfolio-2/heatmap_arrow.png)
+![heatmap suggestions](portfolio-3/heatmap_arrow.png)
 
 The red arrow represent action of adding enzymes, and blue arrow represent covering the pond.
 
