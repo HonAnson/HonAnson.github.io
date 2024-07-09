@@ -9,10 +9,7 @@ collection: portfolio
 ### Introduction
 Red claw crayfish cultivation a valuable but challenging task. Suitable water condition of redclaw crayfish is demanding and varies with location <sup>[1][2]</sup>.  
 
-In this repository, I demonstrated water quality control algorithm I designed while working at J & KC limited as machine learning engineer. I used multivariant gaussian function to model the water's condition for red claw crayfish cultivation. I also designed algorithm to produce cultivation suggestions base on output of this function.  
-Enjoy!
-
-
+In this repository, I demonstrated water quality control algorithm I designed while working at J & KC limited as machine learning engineer. I used multivariant gaussian function to model the water's condition for red claw crayfish cultivation. I also designed algorithm to produce cultivation suggestions base on output of this function.
 
 
 
@@ -41,21 +38,20 @@ A small chunk of water data (across two weeks) is in `water_data.csv`. They are:
 
 Lets visualize them:
 
-<img src="extreme_fish.png" alt="extreme" width="350"/>
 
-![water temperature raw](portfolio-3/temp_raw.png)
-![water pH raw](portfolio-3/ph_raw.png )
-![water DO raw](portfolio-3/DO_raw.png )
-![water EC raw](portfolio-3/EC_raw.png )
+<img src="temp_raw.png" alt="water temperature raw" width="650"/>
+<img src="ph_raw.png" alt="water pH raw" width="650"/>
+<img src="DO_raw.png" alt="water DO raw" width="650"/>
+<img src="EC_raw.png" alt="water EC raw" width="650"/>
 
 Obviously, there are some abnormal at the very end of the data, (the EC and temperature dipped rapidly), so I chose to get rid of it and use 0 to 4000 time step of data. I then z-normalized the data. Plotting the cleaned data:
 
-![water normalized raw](portfolio-3/normalized.png)
+<img src="normalized.png" alt="water normalized raw" width="650"/>
 
 
 ### The model
 
-We are now ready to fit the multivariant gaussian (MVG) model to the water data, more about it [here](https://cs229.stanford.edu/section/gaussians.pdf)<sup>[3]</sup>. Here is the equation for (MVG):
+We are now ready to fit the multivariant gaussian (MVG) model to the water data, more about it [here](https://cs229.stanford.edu/section/gaussians.pdf)<sup>[3]</sup>. Here is the equation for MVG:
 
 
 $$ f(x | \mu, \Sigma) = \frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}\cdot{}exp(-\frac{1}{2}(x - \mu)^T \Sigma^{-1} (x - \mu)) $$
@@ -66,8 +62,9 @@ To fit the mode using maximum likelyhood fitting, we simply need to calculate th
 Heres visualization of the model in temperature and pH dimension, with EC and DO at mean value:
 
 
+<img src="heatmap_dot.png" alt="visualization of model" width="500"/>
 
-![Visualization of model](portfolio-3/heatmap_dot.png)
+<!-- ![Visualization of model](heatmap_dot.png) -->
 
 Temperature and pH are slightly correlated, which is due to manual control of the crayfish farmer. The blue dot is [temp = 25, pH = 8.5, DO = 11, EC = 1550], which is optimal for cultivation (you can also see in the raw data plot, this is within reasonable range). The red dot is [temp = 20, pH = 8.5, DO = 11, EC = 1550], whcih is too cold for crayfish cultivation.
 
@@ -83,7 +80,8 @@ I first colelct a set of cultivation activity that the fish farmer would do, e.g
 
 For each action, model them as a unit vector, pointing towards the direction of its change to water status. For example, the action "covering the pond" would be represented by the vector [-1 0 0 0], meaning that covering the pond would decrease the temperature. Plotting them onto the heatmap:
 
-![heatmap suggestions](portfolio-3/heatmap_arrow.png)
+<img src="heatmap_arrow.png" alt="heatmap suggestions" width="500"/>
+<!-- ![heatmap suggestions](heatmap_arrow.png) -->
 
 The red arrow represent action of adding enzymes, and blue arrow represent covering the pond.
 

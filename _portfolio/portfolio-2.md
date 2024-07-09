@@ -9,7 +9,7 @@ collection: portfolio
 
 ### Introduction
 Measuring size of object is a challenging task in computer vision. Typical methods include obtaining depth data or using reference object. Specifically, thaere have been machine learning models developed for fish size recgonition based on bio-features of fishes [1].  
-In this repository, I showcase an alternative method - stoichastic estimation, for fish size estimation with camera measurement. Which require no depth estimation and reference object, all you need is just a camera.
+In this repository, I showcase an alternative method - stoichastic estimation, for fish size estimation with camera measurement, which require no depth estimation or reference object.
 
 
 ----
