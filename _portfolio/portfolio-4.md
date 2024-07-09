@@ -8,7 +8,7 @@ collection: portfolio
 
 In this project, I worked with my partner as a pair and added functionality in the research tool Machine-Learning Accelerator System Exploration (MASE). MASE is a tool for exploring methodologies that accelerate large ML models, including adding functionalities such as quantization and neural architecture search (NAS).
 
-In our project, we added a `proxy` action and `proxy_strategy`, whcih allow integration of zero-cost proxies with existing bayesian based search algorithms. Zero-cost proxy refers to metrics for a given neural network architecture and a data sets the model will be trained and inference from, and predicts the performance of the network on that datasets without extensively training the network. More about zero-cost proxies [here](https://arxiv.org/abs/2210.03230)
+In our project, we added a `proxy` action and `proxy_strategy`, whcih allow integration of zero-cost proxies with existing bayesian based search algorithms. Zero-cost proxy refers to metrics for a given neural network architecture and a data sets the model will be trained and inference from, and predicts the performance of the network on that datasets without extensively training the network. More about zero-cost proxies [here](https://arxiv.org/abs/2210.03230).
 
 
 **Proxy**
