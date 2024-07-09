@@ -91,9 +91,7 @@ Next, we need the gradient of the score function. Differentiationg the MVG expre
 
 $$ f'(x) = -\Sigma^{-1}\cdot{}x\cdot{}f(x)$$
 
-In practice, we don't need to multiply by f(x), the score of water condition, as we only need the direction of the gradient. Plotting gradient onto the heatmap:
-
-Finally, we can find the inner product similarity of the gradient to each action, and return action with highest similarity as suggestion to user. In this case, the suggestion would be (surprise!) "cover the pond to cool water down", demonstrated in the notebook.
+In practice, we don't need to multiply by f(x), the score of water condition, as we only need the direction of the gradient. Finally, we can find the inner product similarity of the gradient to each action, and return action with highest similarity as suggestion to user. In this case, the suggestion would be (surprise!) "cover the pond to cool water down", demonstrated in the notebook.
 
 
 
