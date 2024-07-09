@@ -1,112 +1,151 @@
 ---
-title: "Greedy Algorithm for Water Condition Control"
-excerpt: "Utilized multivariant gaussian and greedy algorithm approach for crayfish cultivation suggestions<br/><img src='/images/portfolio_cover/water_con.png' width='600' height='350'>"
+title: "Computer Vision for Fish Size Estimation 🐟"
+excerpt: "A stoichastic approach to fish size estimation without depth prior <br/><img src='/images/portfolio_cover/fish_cv.gif' width='500' height='500'>"
 collection: portfolio
 ---
 
-### --- Code available [here](https://github.com/HonAnson/water_control_algorithm) ---
+### --- Code available [here](https://github.com/HonAnson/fish_cv_algorithm) ---
+
 
 ### Introduction
-Red claw crayfish cultivation a valuable but challenging task. Suitable water condition of redclaw crayfish is demanding and varies with location <sup>[1][2]</sup>.  
-
-In this repository, I demonstrated water quality control algorithm I designed while working at J & KC limited as machine learning engineer. I used multivariant gaussian function to model the water's condition for red claw crayfish cultivation. I also designed algorithm to produce cultivation suggestions base on output of this function.  
-Enjoy!
+Measuring size of object is a challenging task in computer vision. Typical methods include obtaining depth data or using reference object. Specifically, thaere have been machine learning models developed for fish size recgonition based on bio-features of fishes [1].  
+In this repository, I showcase an alternative method - stoichastic estimation, for fish size estimation with camera measurement. Which require no depth estimation and reference object, all you need is just a camera.
 
 
+----
 
-
-
-### Quick start
+### Quick Start
+Creating environment with anaconda (I used python3.10):
 
 ```
 conda env create -f environment.yml
-conda activate water
+conda activate fish_cv
+python visualization.py
+python simulation.py
 ```
-Go to `multivariant_gauss_water_quality.ipynb` and everything shall run.  
-The notebook is heavily commented for demonstration purpose.
-
-
-### Preprocessing data
-A small chunk of water data (across two weeks) is in `water_data.csv`. They are:
-
-| Name | Unit | Description |
-|----------|----------|----------|
-| Date | n/a | Date when the data is collected
-| Time | n/a | Time when the data is collected
-| Temperature | <sup>o </sup>C | Temperature of the water
-| pH | pH | Acidity of the water|
-| DO | % | Dissolve oxygen in water|
-| EC | uS/cm | Electrical conductivity in water|
-
-
-Lets visualize them:
+  
+If you see something like the following in the projected visualization, its probably due to a fish being too close the camera in camera axis, but . You can rerun `visualization.py` for a better view.
 
 <img src="extreme_fish.png" alt="extreme" width="350"/>
 
-![water temperature raw](portfolio-2/temp_raw.png)
-![water pH raw](portfolio-2/ph_raw.png )
-![water DO raw](portfolio-2/DO_raw.png )
-![water EC raw](portfolio-2/EC_raw.png )
 
-Obviously, there are some abnormal at the very end of the data, (the EC and temperature dipped rapidly), so I chose to get rid of it and use 0 to 4000 time step of data. I then z-normalized the data. Plotting the cleaned data:
+---
+### Problem Modelling & Assumptions
 
-![water normalized raw](portfolio-2/normalized.png)
+Imageine you are given a fish recgonition computer vision model, which can effectively identify geomatery of fishes for a given image, as shown in figure below. How could we then estimate size of fishes in a fish farm? 
 
-
-### The model
-
-We are now ready to fit the multivariant gaussian (MVG) model to the water data, more about it [here](https://cs229.stanford.edu/section/gaussians.pdf)<sup>[3]</sup>. Here is the equation for (MVG):
-
-
-$$ f(x | \mu, \Sigma) = \frac{1}{(2\pi)^{\frac{n}{2}}|\Sigma|^{\frac{1}{2}}}\cdot{}exp(-\frac{1}{2}(x - \mu)^T \Sigma^{-1} (x - \mu)) $$
-
-Where $\Sigma$ is the covariance matrix, $\mu$ is the mean, and $n$ is the dimension of the data, in our case $n = 4$.
-
-To fit the mode using maximum likelyhood fitting, we simply need to calculate the mean and covariance matrix of the water data, and we are done.  
-Heres visualization of the model in temperature and pH dimension, with EC and DO at mean value:
+<img src="demo.gif" alt="demo" width="500"/>
 
 
 
-![Visualization of model](portfolio-2/heatmap_dot.png)
+Let's simplify the problem a little bit. Assuming the following:  
 
-Temperature and pH are slightly correlated, which is due to manual control of the crayfish farmer. The blue dot is [temp = 25, pH = 8.5, DO = 11, EC = 1550], which is optimal for cultivation (you can also see in the raw data plot, this is within reasonable range). The red dot is [temp = 20, pH = 8.5, DO = 11, EC = 1550], whcih is too cold for crayfish cultivation.
+Chosen assumptions:
+- A 3mx3mx3m fish tank
+- 100 fishes in the tank
+- camera modelled with projective camera model
+
+Necessary assumptions:
+- Near plane and far plane of the camera can be estimated and are constant
+- Location of fishes are uniformly distribted in the tank at a randomly selected time
+- Size of fishes follows normal distribution, our goal is to estimate the mean of the distribution
+- Fishes rotates randomly
+
+Typically, number of fish and geomatery of fish tank are know in farming conditions. and near and far plane could either be boundaries of the tank or blurring of water.  
 
 
 
-### Giving Cultivation Suggestion
-We can now tell whether the water condition is suitable or not, but we can go further. Here I show how we could use the spirit of greedy algorithm for suggestion. 
 
-I first colelct a set of cultivation activity that the fish farmer would do, e.g:
-- Cover the pond when water is too hot
-- Turn on oxygen pump if DO is low
-- Add enzymes if pH is too low
+We then have the folowing 3d model (the four lines represents fov of the camera):
 
-For each action, model them as a unit vector, pointing towards the direction of its change to water status. For example, the action "covering the pond" would be represented by the vector [-1 0 0 0], meaning that covering the pond would decrease the temperature. Plotting them onto the heatmap:
+<img src="3d_fish_vid.gif" alt="3d" width="500"/>
 
-![heatmap suggestions](portfolio-2/heatmap_arrow.png)
 
-The red arrow represent action of adding enzymes, and blue arrow represent covering the pond.
+The projection onto the camera will be:
 
-Next, we need the gradient of the score function. Differentiationg the MVG expression above gives (noting that covariance matrix is positive semidefinite):
+<img src="projected_fish_vid.gif" alt="3d" width="500"/>
 
-$$ f'(x) = -\Sigma^{-1}\cdot{}x\cdot{}f(x)$$
 
-In practice, we don't need to multiply by f(x), the score of water condition, as we only need the direction of the gradient. Plotting gradient onto the heatmap:
 
-Finally, we can find the inner product similarity of the gradient to each action, and return action with highest similarity as suggestion to user. In this case, the suggestion would be (surprise!) "cover the pond to cool water down", demonstrated in the notebook.
+
+### The algorithm
+
+Now I introduce the algorithm, which is simply the answer to the following question:
+
+__Can we recover the mean fish size using many measurement of fish size in image?__
+
+
+
+First, consider distribution of depth in camera frame given the that the fish is seen. In fact, the probability of fish at a certain depth is the volume of the small (red) frustum divided by the bigger (blue) frustum:
+
+<img src="depth.png" alt="depth" width="400"/>
+
+Volume of frustum is given by the following formula:
+$$ V = (S1 + S2 + (S1\cdot{}S2)^\frac{1}{2})*(\frac{h}{3})$$
+
+Where S1 and S2 are area of the two bases of the frustum, and h is height of the frustum.
+
+What about rotation of the fishes? Let's think deeper about rotation of fishes. If we have a camera viewing a fish as shown in following figure, actually only angle $\theta$ affect the measured size.
+
+
+<img src="rotation.png" alt="rotation" width="500"/>
+
+Which we can simplify the estimation signfiicantly. I chose to numerically compute the expected size of fish at a depth rotated, as it raises some complicated arithmetics.
+
+To summarise:
+1. Estimate near plane and far plane of the camera
+2. Calculate the probability distribution of fish at different of depth
+3. At each depth, compute projected size of the fish in image, rotated from 0 to $2\pi$, average them.
+4. For each angle averaged size at each depth, multiply it by the probability calculated in step 2.
+5. Repeat step 2 to 4 with different chosen fish size, record the expected projected size.
+6. By taking many image measurement, calculate the average projected fish length. 
+7. Lookup the expected sizes given in step 5, find its corrsponding chosen fish size, this is our estimation.
 
 
 
 ### Discussion
-Here are some points for discussion and possible improvements:
-- The algorithm auto capture correlations between water quality metrics
-- Convenient way to provide cultivation suggestions
-- Future work: include positional encoding into time dimension of water data  (e.g. time in the year, in day)
-- Future work: Also calculate metric for actions (e.g. covver pond for a period of time, add certain dosage of chemicals to adjust water properties)
+#### Performance
+We compare estimated size with actual size, with different scaling input. In general, length is better estimated compare to size. It is also observed that both length and area are underestimated. 
+
+<div style="display: flex;">
+    <img src="length_plot.png" alt="length vs scale" width="400"/>
+    <img src="size_plot.png" alt="size vs scale" width="400"/>
+</div>
+
+
+Considering estimation vs number of images, one could see that the estimation converges quickly:
+
+<div style="display: flex;">
+<img src="length_vs_trial.png" alt="length vs trial" width="400"/>
+<img src="size_vs_trial.png" alt="depth vs trial" width="400"/>
+</div>
+
+
+Heres why there is a bias (under estimation) in our estimation - because I only include fishes that are entirely within the frame. Fishes that are closer to the camera are less likely to be included, while further to the camera, fishes are little less like to be included only. This leading to an underestimation of fish sizes, in particular, this issue in our simulation raises as fish actual size increases.
+
+<!-- 
+#### Numerical vs Analytical
+Lets also see why I chose to numerically figure expected size of a fish when rotated randomly at a certain depth. Consider the followign 2d case: -->
 
 
 
-### References
-[1] https://www.researchgate.net/publication/305239925_Freshwater_Crayfish_Farming_-_a_guide_to_getting_started  
-[2] https://www.fao.org/fishery/en/culturedspecies/cherax_quadricarinatus
-[3] https://cs229.stanford.edu/section/gaussians.pdf
+
+
+
+
+### Future work
+
+- Taking things one step further, we can consider occolution. As we know the number of fish and volume of the tank, probability of a fish being blocked is given by:
+$$P(blocked) = \rho{}_f \cdot{} V $$
+
+
+
+- As you can see in the demo gif, fish at extreme angle couldn't be measured. This can be included into the simulation by dropping extreme angles.
+
+
+### References 
+
+[1] i-enter coporation, Fish Size Estimation Camera, https://www.i-enter.co.jp/en/marine-tech/fishsize-measurement/
+
+
+
