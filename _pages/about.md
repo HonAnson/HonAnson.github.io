@@ -9,9 +9,9 @@ redirect_from:
 Hi, my name is Anson Hon. Welcome and thank you for visiting my personal page. 
 
 Here are a few facts about me:
-- I am currently MSc Applied Machine Learning student at Imperial College London
-- I am working on my thesis: NeRF LiDAR 3D Reconstruction
-- I am interested in mahcine learning and computer vision
+- Previously MSc Applied Machine Learning student at Imperial College London
+- My MSc thesis: Neural LiDAR 3D Reconstruction
+- I am interested in mahcine learning and computer vision!
 
 Feel free to checkout my portfolio and my CV. The best way to contact me will be through email: [hon.anson@gmail.com](hon.anson@gmail.com)
 
