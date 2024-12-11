@@ -8,21 +8,19 @@ redirect_from:
 ---
 Hi, my name is Anson Hon. Welcome and thank you for visiting my personal page. 
 
-Here are a few facts about me:
-- Previously MSc Applied Machine Learning student at Imperial College London
-- My MSc thesis: Neural LiDAR 3D Reconstruction
-- I am interested in mahcine learning and computer vision!
+Few things about me:
+- I am working as a graduate research assistant at the [AANTC](https://aantc.ust.hk/) lab at HKUST, applying computer vision for sport science
+- I graduated in MSc Applied Machine Learning student at Imperial College London
+- My MSc thesis: Neural LiDAR 3D Reconstruction, supervised by [Dr Sen Wang](https://scholar.google.co.uk/citations?user=vkY0jxEAAAAJ&hl=en)
+- I am currently learning Neovim
 
-Feel free to checkout my portfolio and my CV.  
-The best way to contact me will be through email: [hon.anson@gmail.com](hon.anson@gmail.com)
-
-
-
-
+Pleaes feel free to checkout my portfolio and my CV.  
+The best way to contact me will be through email:  <a href="mailto:hon.anson@gmail.com">hon.anson@gmail.com</a>
 
 
 
 # Random
+I host notes on some papers I have read (updated infrequently) [here](https://drive.google.com/drive/folders/1RCtjoMyA_l3nHP6UE3Vss8oZnBhMVF7s?usp=sharing)
 
 <img src="images/random/flowershop.jpeg" alt="flowershop" width="400"/>
 

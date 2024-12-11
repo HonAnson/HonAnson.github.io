@@ -36,6 +36,7 @@ Skills
 ======
 Programming:
 * python --- Competent, with experence in: pytorch, keras, opencv, open3d
+* Dart --- Basic, with experience in: flutter
 * c++ --- Basic
 * Julia --- Basic
 * Matlab --- Basic
