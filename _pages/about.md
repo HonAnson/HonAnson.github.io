@@ -13,7 +13,8 @@ Here are a few facts about me:
 - My MSc thesis: Neural LiDAR 3D Reconstruction
 - I am interested in mahcine learning and computer vision!
 
-Feel free to checkout my portfolio and my CV. The best way to contact me will be through email: [hon.anson@gmail.com](hon.anson@gmail.com)
+Feel free to checkout my portfolio and my CV.  
+The best way to contact me will be through email: [hon.anson@gmail.com](hon.anson@gmail.com)
 
 
 
