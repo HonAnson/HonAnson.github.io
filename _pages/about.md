@@ -20,7 +20,7 @@ The best way to contact me will be through email:  <a href="mailto:hon.anson@gma
 
 
 # Random
-I host notes on some papers I have read (updated infrequently) [here](https://drive.google.com/drive/folders/1RCtjoMyA_l3nHP6UE3Vss8oZnBhMVF7s?usp=sharing)
+I host notes on some papers I have read (updated from time to time) [here](https://drive.google.com/drive/folders/1RCtjoMyA_l3nHP6UE3Vss8oZnBhMVF7s?usp=sharing)
 
 <img src="images/random/flowershop.jpeg" alt="flowershop" width="400"/>
 
