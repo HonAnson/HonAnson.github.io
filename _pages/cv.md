@@ -11,10 +11,10 @@ redirect_from:
 
 Education
 ======
-* MSc in Applied Machine Learning, Imperial College London, 2024, [transcript](https://honanson.github.io/files/ICL_MSc_Transcript.pdf)
-* BEng in Mechanical Engineering (International), University of Leeds, 2021, [transcript](https://HonAnson.github.io/files/U_of_Leeds_Transcript.pdf)
-* Exchange Student, Nagoya University, 2019, [transcript](https://HonAnson.github.io/files/NUPACE_transcript.pdf)
-* Hong Kong Diploma of Secondary Education, top 4%, 2016, [transcript](https://HonAnson.github.io/files/DSE_transcript.pdf)
+* MSc in Applied Machine Learning, Imperial College London, 2024, [transcript](https://honanson.github.io/files/MSc_Transcript_redacted.pdf)
+* BEng in Mechanical Engineering (International), University of Leeds, 2021, [transcript](https://HonAnson.github.io/files/U_of_Leeds_Transcript_redacted.pdf)
+* Exchange Student, Nagoya University, 2019, [transcript](https://HonAnson.github.io/files/NUPACE_transcript_redacted.pdf)
+* Hong Kong Diploma of Secondary Education, top 4%, 2016, [transcript](https://HonAnson.github.io/files/DSE_transcript_redacted.pdf)
 
 Work experience
 ======
