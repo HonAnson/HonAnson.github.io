@@ -14,8 +14,7 @@ Few things about me:
 - My MSc thesis titled ["Neural LiDAR 3D Reconstruction"](https://HonAnson.github.io/files/MSc_thesis_HonChinYungAnson.pdf) with the [poster](https://HonAnson.github.io/files/MSc_poster_HonChinYungAnson.pdf), supervised by [Dr Sen Wang](https://scholar.google.co.uk/citations?user=vkY0jxEAAAAJ&hl=en)
 - I am currently learning Neovim
 
-Pleaes feel free to checkout my portfolio and my CV.  
-The best way to contact me will be through email:  <a href="mailto:hon.anson@gmail.com">hon.anson@gmail.com</a>
+Pleaes feel free to checkout my portfolio and my CV. The best way to contact me will be through email:  <a href="mailto:hon.anson@gmail.com">hon.anson@gmail.com</a>
 
 
 
