@@ -12,12 +12,12 @@ Few things about me:
 - I am working as a graduate research assistant at the [AANTC](https://aantc.ust.hk/) lab at HKUST, applying computer vision for sport science
 - I graduated in MSc Applied Machine Learning student at Imperial College London
 - My MSc thesis titled ["Neural LiDAR 3D Reconstruction"](https://HonAnson.github.io/files/MSc_thesis_HonChinYungAnson.pdf) and [poster](https://HonAnson.github.io/files/MSc_poster_HonChinYungAnson.pdf), are supervised by [Dr Sen Wang](https://scholar.google.co.uk/citations?user=vkY0jxEAAAAJ&hl=en)
-- I am currently learning Neovim
 
 Pleaes feel free to checkout my portfolio and my CV. The best way to contact me will be through email:  <a href="mailto:hon.anson@gmail.com">hon.anson@gmail.com</a>
 
 # Timeline
-* **2024 Oct**: Start my position at HKUST AANTC lab as research assistant in computer vision
+* **2024 Nov**: Install and learning neovim
+* **2024 Oct**: Started my position at HKUST AANTC lab as research assistant in computer vision
 * **2024 Sep**: Graduated my MSc degree with distinction
 * **2024 Feb**: Started using Vim key binding in VSCode
 * **2023 Sep**: Begin my MSc Applied Machine Learning degree at Imperial College London
