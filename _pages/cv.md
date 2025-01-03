@@ -53,7 +53,6 @@ Language:
 * Japanese ---  Intermediate, JLPT N3 qualified
 
 
-
 Other Achievements  
 ======
 * AWS Idea Launcher Program - Qualified
