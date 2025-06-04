@@ -18,12 +18,18 @@ Education
 
 Work experience
 ======
-* __Nov 2022 - Sep 2023: Machine Learning Engineer at J&KC Limited__
+* __2024 - Current: Research Assistant (Computer Vision) at HKUST__
+  * Test and deployed visual deep learning algorithm for athlete pose estimation with downstream algorithm design
+  * Sole developer of a mobile application designed to support sailing athlete training, featuring Bluetooth connectivity to sensor devices, real-time data recording and visualization, and a frontend interface optimized for outdoor use
+
+
+
+* __2022 - 2023: Machine Learning Engineer at J&KC Limited__
   * Algorithm design in water quality control and computer vision for argricultural IoT systems
   * Prototype deployment with AWS lambda, IoT Core
   * Liaise with client and prepare project proposal for funding application of over £800,000
 
-* __Oct 2021 - Nov 2022: Assistant Engineer at WSP (Asia) Limited__
+* __2021 - 2022: Assistant Engineer at WSP (Asia) Limited__
   * Assist in air conditioning system design for new railway station - Hung Shiu Kiu station in Hong Kong
   * Modelling with Revit BIM 360 and AutoCAD
   
