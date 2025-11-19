@@ -6,9 +6,9 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Hi, my name is Anson Hon. Welcome and thank you for visiting my personal page. 
+Hi, welcome and thank you for visiting my personal page!
 
-Few things about me:
+Here are few things about me:
 - I am working as a graduate research assistant at the [AANTC](https://aantc.ust.hk/) lab at HKUST, applying computer vision for sport science
 - I graduated in MSc Applied Machine Learning student at Imperial College London
 - My MSc thesis titled ["Neural LiDAR 3D Reconstruction"](https://HonAnson.github.io/files/MSc_thesis_redacted.pdf) and [poster](https://HonAnson.github.io/files/MSc_poster_HonChinYungAnson.pdf), are supervised by [Dr Sen Wang](https://scholar.google.co.uk/citations?user=vkY0jxEAAAAJ&hl=en)
@@ -16,10 +16,11 @@ Few things about me:
 Pleaes feel free to checkout my portfolio and my CV. The best way to contact me will be through email:  <a href="mailto:hon.anson@gmail.com">hon.anson@gmail.com</a>
 
 # Timeline
-* **2024 Nov**: Install and learning neovim
+* **2025 July**: Submitted my work as contribution paper (first time), currently under review
+* **2024 Nov**: Started learning neovim
 * **2024 Oct**: Started my position at HKUST AANTC lab as research assistant in computer vision
 * **2024 Sep**: Graduated my MSc degree with distinction
-* **2024 Feb**: Started using Vim key binding in VSCode
+* **2024 Feb**: Started using Vim motion in VSCode
 * **2023 Sep**: Begin my MSc Applied Machine Learning degree at Imperial College London
 * **2023 Feb**: Awarded with the "[AWS and HKSTP idea launcher program](https://pages.awscloud.com/startups-idea-launcher.html?trk=hkstp)" funding
 * **2023 Jan**: Started coding with python in google colab
@@ -28,9 +29,9 @@ Pleaes feel free to checkout my portfolio and my CV. The best way to contact me 
 # Random
 I host notes on some papers I have read (updated from time to time) [here](https://drive.google.com/drive/folders/1RCtjoMyA_l3nHP6UE3Vss8oZnBhMVF7s?usp=sharing)
 
-<img src="images/random/flowershop.jpeg" alt="flowershop" width="400"/>
+<img src="images/random/steam_clock.jpeg" alt="flowershop" width="400"/>
 
-A beautiful flower shop next to a church in London.
+A sophisticated steam clock at Otaru.
 
 
 

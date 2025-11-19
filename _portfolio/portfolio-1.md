@@ -5,11 +5,6 @@ collection: portfolio
 ---
 
 
-# --- Code available [here](https://github.com/HonAnson/LiDAR_NeRF) --- 
+<!-- # --- Code available [here](https://github.com/HonAnson/LiDAR_NeRF) ---  -->
 
-In this project, I am developing Neural Radiance Field Method for 3D reconstruction with LiDAR data. Please feel free to check the link above for my code (work in progress). More documentation will be provided upon completion of the project.
-
-
-
-
-
+In this project, I am developing Neural Radiance Field Method for 3D reconstruction with LiDAR data. More documentation will be provided upon completion of the project.
