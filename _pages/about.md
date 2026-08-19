@@ -16,7 +16,6 @@ Here are few things about me:
 Pleaes feel free to checkout my portfolio and my CV. The best way to contact me will be through email:  <a href="mailto:hon.anson@gmail.com">hon.anson@gmail.com</a>
 
 # Timeline
-* **2026 July**: Received the Anne Seagrim Accommodation Scholarship for my upcoming PhD study!
 * **2025 July**: Submitted my work as contribution paper (first time), currently under review
 * **2024 Nov**: Started learning neovim
 * **2024 Oct**: Started my position at HKUST AANTC lab as research assistant in computer vision
